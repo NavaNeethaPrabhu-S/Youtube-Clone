@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABJklEQVR4Ae2WpVaFQRSFcaeS4QVwIjTiLbgk7D1w9xeg4FQcOu6acHeXtNnDmsFd7in/WetLI+f7dbYDAFEsAUvgoeAQ5k5iSQFpIH1kkMyQFXJMTsgpwTuc6jlHes2M3qNP71mge7g76DLNg8gygZ1QckGmuSdZJ7Azq8RDCSQTCJGgBCoFBWqVQLegQJcSmPnWIr9oICMXcIr4C4FJJbD9rUX+NtzX+CIQlfVbgS0lcP4jAVNt/UCA7acCZ0oAPxfQdXMLFNUBvpHflvgbAVM7h0B6zrfeD3kB+Ucg/xLKf4biPyLJX3GH9GFUogRSBQUSTSBZEwskQpFs1USyl6E0gRSRJtJPhsnci1B69oVQeqzXzOo9+kmj3juBeDw2BkSxBCyBO+9s03HRLVCoAAAAAElFTkSuQmCC">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="main-nav">
+
+        <div class="child-nav">
+            <div class="cast"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-cast">
+                    <path
+                        d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6">
+                    </path>
+                    <line x1="2" y1="20" x2="2.01" y2="20" fill="white"></line>
+                </svg>
+            </div>
+            <div class="side-logo">
+                <a href="#"> <i class="fa-solid fa-bars"></i> </a>
+            </div>
+            <div class="main-permium">
+                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="auto" viewBox="0 0 101 20">
+                    <g>
+                        <path
+                            d="M14.4848 20C14.4848 20 23.5695 20 25.8229 19.4C27.0917 19.06 28.0459 18.08 28.3808 16.87C29 14.65 29 9.98 29 9.98C29 9.98 29 5.34 28.3808 3.14C28.0459 1.9 27.0917 0.94 25.8229 0.61C23.5695 0 14.4848 0 14.4848 0C14.4848 0 5.42037 0 3.17711 0.61C1.9286 0.94 0.954148 1.9 0.59888 3.14C0 5.34 0 9.98 0 9.98C0 9.98 0 14.65 0.59888 16.87C0.954148 18.08 1.9286 19.06 3.17711 19.4C5.42037 20 14.4848 20 14.4848 20Z"
+                            fill="#FF0033" />
+                        <path d="M19 10L11.5 5.75V14.25L19 10Z" fill="white" />
+                    </g>
+                    <g>
+                        <path
+                            d="M32.1819 2.10016V18.9002H34.7619V12.9102H35.4519C38.8019 12.9102 40.5619 11.1102 40.5619 7.57016V6.88016C40.5619 3.31016 39.0019 2.10016 35.7219 2.10016H32.1819ZM37.8619 7.63016C37.8619 10.0002 37.1419 11.0802 35.4019 11.0802H34.7619V3.95016H35.4519C37.4219 3.95016 37.8619 4.76016 37.8619 7.13016V7.63016Z"
+                            fill="white" />
+                        <path
+                            d="M41.982 18.9002H44.532V10.0902C44.952 9.37016 45.992 9.05016 47.302 9.32016L47.462 6.33016C47.292 6.31016 47.142 6.29016 47.002 6.29016C45.802 6.29016 44.832 7.20016 44.342 8.86016H44.162L43.952 6.54016H41.982V18.9002Z"
+                            fill="white" />
+                        <path
+                            d="M55.7461 11.5002C55.7461 8.52016 55.4461 6.31016 52.0161 6.31016C48.7861 6.31016 48.0661 8.46016 48.0661 11.6202V13.7902C48.0661 16.8702 48.7261 19.1102 51.9361 19.1102C54.4761 19.1102 55.7861 17.8402 55.6361 15.3802L53.3861 15.2602C53.3561 16.7802 53.0061 17.4002 51.9961 17.4002C50.7261 17.4002 50.6661 16.1902 50.6661 14.3902V13.5502H55.7461V11.5002ZM51.9561 7.97016C53.1761 7.97016 53.2661 9.12016 53.2661 11.0702V12.0802H50.6661V11.0702C50.6661 9.14016 50.7461 7.97016 51.9561 7.97016Z"
+                            fill="white" />
+                        <path
+                            d="M60.1945 18.9002V8.92016C60.5745 8.39016 61.1945 8.07016 61.7945 8.07016C62.5645 8.07016 62.8445 8.61016 62.8445 9.69016V18.9002H65.5045L65.4845 8.93016C65.8545 8.37016 66.4845 8.04016 67.1045 8.04016C67.7745 8.04016 68.1445 8.61016 68.1445 9.69016V18.9002H70.8045V9.49016C70.8045 7.28016 70.0145 6.27016 68.3445 6.27016C67.1845 6.27016 66.1945 6.69016 65.2845 7.67016C64.9045 6.76016 64.1545 6.27016 63.0845 6.27016C61.8745 6.27016 60.7345 6.79016 59.9345 7.76016H59.7845L59.5945 6.54016H57.5445V18.9002H60.1945Z"
+                            fill="white" />
+                        <path
+                            d="M74.0858 4.97016C74.9858 4.97016 75.4058 4.67016 75.4058 3.43016C75.4058 2.27016 74.9558 1.91016 74.0858 1.91016C73.2058 1.91016 72.7758 2.23016 72.7758 3.43016C72.7758 4.67016 73.1858 4.97016 74.0858 4.97016ZM72.8658 18.9002H75.3958V6.54016H72.8658V18.9002Z"
+                            fill="white" />
+                        <path
+                            d="M79.9516 19.0902C81.4116 19.0902 82.3216 18.4802 83.0716 17.3802H83.1816L83.2916 18.9002H85.2816V6.54016H82.6416V16.4702C82.3616 16.9602 81.7116 17.3202 81.1016 17.3202C80.3316 17.3202 80.0916 16.7102 80.0916 15.6902V6.54016H77.4616V15.8102C77.4616 17.8202 78.0416 19.0902 79.9516 19.0902Z"
+                            fill="white" />
+                        <path
+                            d="M90.0031 18.9002V8.92016C90.3831 8.39016 91.0031 8.07016 91.6031 8.07016C92.3731 8.07016 92.6531 8.61016 92.6531 9.69016V18.9002H95.3131L95.2931 8.93016C95.6631 8.37016 96.2931 8.04016 96.9131 8.04016C97.5831 8.04016 97.9531 8.61016 97.9531 9.69016V18.9002H100.613V9.49016C100.613 7.28016 99.8231 6.27016 98.1531 6.27016C96.9931 6.27016 96.0031 6.69016 95.0931 7.67016C94.7131 6.76016 93.9631 6.27016 92.8931 6.27016C91.6831 6.27016 90.5431 6.79016 89.7431 7.76016H89.5931L89.4031 6.54016H87.3531V18.9002H90.0031Z"
+                            fill="white" />
+                    </g>
+                </svg>
+
+                <!-- <h2 class="Premium">Premium</h2> -->
+            </div>
+            <div class="search">
+                <input type="search" placeholder="Search">
+            </div>
+            <div class="search-logo">
+                <abbr title="Search"> <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a></abbr>
+            </div>
+            <div class="voice-div">
+                <abbr title="Search with your voice"> <a href="#"><i class="fa-solid fa-microphone"></i></a></abbr>
+            </div>
+            <div class="create-div">
+                <button id="text"> <span style="font-size: 40px; position: relative;left: -30px;">+</span> <span
+                        class="text">Create</span></button>
+            </div>
+
+            <div class="notify">
+                <abbr title="Notification">
+                    <a href="#">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="26" width="26"
+                            viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.497 4.898l.053.8.694.4C15.596 6.878 16.5 8.334 16.5 10v2.892c0 .997.27 1.975.784 2.83L18.35 17.5H5.649l1.067-1.778c.513-.855.784-1.833.784-2.83V10c0-1.666.904-3.122 2.256-3.902l.694-.4.053-.8c.052-.78.703-1.398 1.497-1.398.794 0 1.445.618 1.497 1.398ZM6 10c0-2.224 1.21-4.165 3.007-5.201C9.11 3.236 10.41 2 12 2c1.59 0 2.89 1.236 2.993 2.799C16.79 5.835 18 7.776 18 10v2.892c0 .725.197 1.436.57 2.058l1.521 2.535c.4.667-.08 1.515-.857 1.515H15c0 .796-.316 1.559-.879 2.121-.562.563-1.325.879-2.121.879s-1.559-.316-2.121-.879C9.316 20.56 9 19.796 9 19H4.766c-.777 0-1.257-.848-.857-1.515L5.43 14.95c.373-.622.57-1.333.57-2.058V10Zm4.5 9c0 .398.158.78.44 1.06.28.282.662.44 1.06.44s.78-.158 1.06-.44c.282-.28.44-.662.44-1.06h-3Z"
+                                fill="white" />
+                        </svg>
+
+
+
+                    </a>
+                </abbr>
+            </div>
+
+
+            <div class="logo-profile">
+                <i class="fa-solid fa-user"></i>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <ul class="main-text">
+            <a href="#">
+                <li>All</li>
+            </a>
+            <a href="#">
+                <li>Cartoon</li>
+            </a>
+            <a href="#">
+                <li>Movie</li>
+            </a>
+            <a href="#">
+                <li>Music</li>
+            </a>
+            <a href="#">
+                <li>Comedy</li>
+            </a>
+            <a href="#">
+                <li>Funny</li>
+            </a>
+            <a href="#">
+                <li>Action</li>
+            </a>
+            <a href="#" class="remove">
+                <li class="remove">Horror</li>
+            </a>
+            <a href="#">
+                <li class="remove">Live</li>
+            </a>
+            <a href="#" class="remove">
+                <li class="remove">Prank</li>
+            </a>
+            <a href="#" class="remove">
+                <li class="remove">Boating</li>
+            </a>
+            <a href="#" class="remove">
+                <li class="remove">Bike</li>
+            </a>
+        </ul>
+
+
+        </section>
+    </div>
+    <!-- finised top -->
+
+    <!-- <section class="slid">
+        <div class="slid-bar">
+            <div class="side-logo">
+                <a href="#"> <i class="fa-solid fa-bars"></i> </a>
+            </div>
+            <div class="main-permium">
+                <i class="fa-brands fa-youtube"></i>
+                <h2 class="Premium">Premium</h2>
+            </div>
+
+        </div>
+        <hr>
+
+       
+         
+    </section> -->
+
+    <section class="side-bar">
+
+        <div class="left-side">
+            <div class="left-logo">
+                <a href="#"> <i class="fa-solid fa-bars"></i> </a>
+            </div>
+            <div class="left-permium">
+                <i class="fa-brands fa-youtube"></i>
+                <h2 class="Premium">Premium</h2>
+            </div>
+
+            <div class="Main-access">
+                <div class="acc">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="black">
+                            <path
+                                d="M22.146 11.146a.5.5 0 01-.353.854H20v7.5a1.5 1.5 0 01-1.5 1.5H14v-8h-4v8H5.5A1.5 1.5 0 014 19.5V12H2.207a.5.5 0 01-.353-.854L12 1l10.146 10.146Z"
+                                fill-rule="evenodd" clip-rule="evenodd" fill="white" />
+                        </svg>
+                        <h1>Home </h1>
+                        <div class="border">
+
+                        </div>
+                    </a>
+                </div>
+                <div class="acc">
+                    <a href="#" class="c2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="black">
+                            <path
+                                d="m7.61 15.719.392-.22v-2.24l-.534-.228-.942-.404c-.869-.372-1.4-1.15-1.446-1.974-.047-.823.39-1.642 1.203-2.097h.001L15.13 3.59c1.231-.689 2.785-.27 3.466.833.652 1.058.313 2.452-.879 3.118l-1.327.743-.388.217v2.243l.53.227.942.404c.869.372 1.4 1.15 1.446 1.974.047.823-.39 1.642-1.203 2.097l-.002.001-8.845 4.964-.001.001c-1.231.688-2.784.269-3.465-.834-.652-1.058-.313-2.451.879-3.118l1.327-.742Zm1.993 6.002c-1.905 1.066-4.356.46-5.475-1.355-1.057-1.713-.548-3.89 1.117-5.025a4.14 4.14 0 01.305-.189l1.327-.742-.942-.404a4.055 4.055 0 01-.709-.391c-.963-.666-1.578-1.718-1.644-2.877-.08-1.422.679-2.77 1.968-3.49l8.847-4.966c1.905-1.066 4.356-.46 5.475 1.355 1.057 1.713.548 3.89-1.117 5.025a4.074 4.074 0 01-.305.19l-1.327.742.942.403c.253.109.49.24.709.392.963.666 1.578 1.717 1.644 2.876.08 1.423-.679 2.77-1.968 3.491l-8.847 4.965ZM10 14.567a.25.25 0 00.374.217l4.45-2.567a.25.25 0 000-.433l-4.45-2.567a.25.25 0 00-.374.216v5.134Z"
+                                fill-rule="evenodd" clip-rule="evenodd" fill="white" />
+                        </svg>
+                        <h1>Shorts</h1>
+                        <div class="border">
+
+                        </div>
+                    </a>
+                </div>
+                <div class="acc">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="black">
+                            <path
+                                d="M4 4.5A1.5 1.5 0 015.5 3h13A1.5 1.5 0 0120 4.5H4Zm16.5 3h-17v11h17v-11ZM3.5 6A1.5 1.5 0 002 7.5v11A1.5 1.5 0 003.5 20h17a1.5 1.5 0 001.5-1.5v-11A1.5 1.5 0 0020.5 6h-17Zm7.257 4.454a.5.5 0 00-.757.43v4.233a.5.5 0 00.757.429L15 13l-4.243-2.546Z"
+                                fill-rule="evenodd" clip-rule="evenodd" fill="white" />
+                        </svg>
+                        <h1>Subscriptions</h1>
+                        <div class="border">
+
+                        </div>
+                    </a>
+                </div>
+                <div class="acc">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="black">
+                            <path
+                                d="M12 20.5c4.694 0 8.5-3.806 8.5-8.5S16.694 3.5 12 3.5 3.5 7.306 3.5 12s3.806 8.5 8.5 8.5Zm0 1.5c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm0-5c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5Zm0 1c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6Zm-1.243-8.546c-.333-.2-.757.04-.757.43v4.233c0 .389.424.629.757.429L15 12l-4.243-2.546Z"
+                                fill-rule="evenodd" clip-rule="evenodd" fill="white" />
+                        </svg>
+                        <h1>YouTube Music</h1>
+                        <div class="border">
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- another2 --> <!-- another2 --> <!-- another2 --> <!-- another2 -->
+
+            <section class="history">
+                <div class="you">
+                    <h3>You <span class="syb"> > </span></h3>
+                </div>
+
+                <div class="acc1">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="black">
+                            <path
+                                d="M14.203 4.83c-1.74-.534-3.614-.418-5.274.327-1.354.608-2.49 1.6-3.273 2.843H8.25c.414 0 .75.336.75.75s-.336.75-.75.75H3V4.25c0-.414.336-.75.75-.75s.75.336.75.75v2.775c.935-1.41 2.254-2.536 3.815-3.236 1.992-.894 4.241-1.033 6.328-.392 2.088.641 3.87 2.02 5.017 3.878 1.146 1.858 1.578 4.07 1.215 6.223-.364 2.153-1.498 4.1-3.19 5.48-1.693 1.379-3.83 2.095-6.012 2.016-2.182-.08-4.26-.949-5.849-2.447-1.588-1.499-2.578-3.523-2.784-5.697-.039-.412.264-.778.676-.817.412-.04.778.263.818.675.171 1.812.996 3.499 2.32 4.748 1.323 1.248 3.055 1.973 4.874 2.04 1.818.065 3.598-.532 5.01-1.681 1.41-1.15 2.355-2.773 2.657-4.567.303-1.794-.056-3.637-1.012-5.186-.955-1.548-2.44-2.697-4.18-3.231ZM12.75 7.5c0-.414-.336-.75-.75-.75s-.75.336-.75.75v4.886l.314.224 3.5 2.5c.337.241.806.163 1.046-.174.241-.337.163-.806-.174-1.046l-3.186-2.276V7.5Z"
+                                fill-rule="evenodd" clip-rule="evenodd" fill="white" />
+                        </svg>
+                        <h1>History</h1>
+                        <div class="border">
+
+                        </div>
+                    </a>
+                </div>
+
+                <div class="acc1">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="black">
+                            <path
+                                d="M3.75 5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75S20.664 5 20.25 5H3.75Zm0 4c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75S20.664 9 20.25 9H3.75Zm0 4c-.414 0-.75.336-.75.75s.336.75.75.75h8.5c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-8.5Zm8.5 4c.414 0 .75.336.75.75s-.336.75-.75.75h-8.5c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h8.5Zm3.498-3.572c-.333-.191-.748.05-.748.434v6.276c0 .384.415.625.748.434L22 17l-6.252-3.572Z"
+                                fill-rule="evenodd" clip-rule="evenodd" fill="white" />
+                        </svg>
+                        <h1>Playlists</h1>
+                        <div class="border">
+
+                        </div>
+                    </a>
+                </div>
+
+                <div class="acc1">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="black">
+                            <path
+                                d="M3.5 5.5h17v13h-17v-13ZM2 5.5C2 4.672 2.672 4 3.5 4h17c.828 0 1.5.672 1.5 1.5v13c0 .828-.672 1.5-1.5 1.5h-17c-.828 0-1.5-.672-1.5-1.5v-13Zm7.748 2.927c-.333-.19-.748.05-.748.435v6.276c0 .384.415.625.748.434L16 12 9.748 8.427Z"
+                                fill-rule="evenodd" clip-rule="evenodd" fill="white" />
+                        </svg>
+                        <h1>Your videos</h1>
+                        <div class="border">
+
+                        </div>
+                    </a>
+                </div>
+
+                <div class="acc1">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="black">
+                            <path
+                                d="M20.5 12c0 4.694-3.806 8.5-8.5 8.5S3.5 16.694 3.5 12 7.306 3.5 12 3.5s8.5 3.806 8.5 8.5Zm1.5 0c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Zm-9.25-5c0-.414-.336-.75-.75-.75s-.75.336-.75.75v5.375l.3.225 4 3c.331.248.802.181 1.05-.15.248-.331.181-.801-.15-1.05l-3.7-2.775V7Z"
+                                fill-rule="evenodd" clip-rule="evenodd" fill="white" />
+                        </svg>
+                        <h1>Watch later</h1>
+                        <div class="border">
+
+                        </div>
+
+                    </a>
+                </div>
+
+                <div class="acc1">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="black">
+                            <path
+                                d="M14.813 5.018 14.41 6.5 14 8h5.192c.826 0 1.609.376 2.125 1.022.711.888.794 2.125.209 3.101L21 13l.165.413c.519 1.296.324 2.769-.514 3.885l-.151.202v.5c0 1.657-1.343 3-3 3H5c-1.105 0-2-.895-2-2v-8c0-1.105.895-2 2-2h2v.282c0-.834.26-1.647.745-2.325L12 1l1.1.472c1.376.59 2.107 2.103 1.713 3.546ZM7 10.5H5c-.276 0-.5.224-.5.5v8c0 .276.224.5.5.5h2v-9Zm10.5 9h-9V9.282c0-.521.163-1.03.466-1.453l3.553-4.975c.682.298 1.043 1.051.847 1.77l-.813 2.981c-.123.451-.029.934.255 1.305.284.372.725.59 1.192.59h5.192c.37 0 .722.169.954.459.32.399.357.954.094 1.393l-.526.876c-.241.402-.28.894-.107 1.33l.165.412c.324.81.203 1.73-.32 2.428l-.152.202c-.195.26-.3.575-.3.9v.5c0 .828-.672 1.5-1.5 1.5Z"
+                                fill-rule="evenodd" clip-rule="evenodd" fill="white" />
+                        </svg>
+                        <h1>Liked Videos</h1>
+                        <div class="border">
+
+                        </div>
+
+                    </a>
+                </div>
+
+                <div class="acc1">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="black">
+                            <path
+                                d="M17.53 11.53c.293-.293.293-.767 0-1.06-.293-.293-.767-.293-1.06 0l-3.72 3.72V3c0-.414-.336-.75-.75-.75s-.75.336-.75.75v11.19l-3.72-3.72c-.293-.293-.767-.293-1.06 0-.293.293-.293.767 0 1.06l5 5 .53.53.53-.53 5-5Zm1.72 8.97c.414 0 .75-.336.75-.75s-.336-.75-.75-.75H4.75c-.414 0-.75.336-.75.75s.336.75.75.75h14.5Z"
+                                fill-rule="evenodd" clip-rule="evenodd" fill="white" />
+                        </svg>
+                        <h1>Downloads</h1>
+                        <div class="border">
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <div class="acc1">
+
+                    <a href="#">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="black">
+                            <path
+                                d="m8.042 9.456-.716.08c-.732.08-1.486-.16-2.043-.718-.977-.976-.977-2.559 0-3.535.976-.977 2.559-.977 3.535 0 .558.557.798 1.312.717 2.044l-.079.715.51.51 10.13 10.13c-.97.643-2.291.537-3.146-.318l-4.951-4.951-1.061 1.06 4.951 4.952c1.442 1.442 3.712 1.553 5.282.331.13-.1.255-.212.375-.331l.707-.707-1.06-1.061L15.534 12l5.657-5.657 1.06-1.06-.706-.708c-.12-.12-.245-.23-.376-.331-1.569-1.222-3.839-1.111-5.281.331L13.06 7.404l1.061 1.06 2.829-2.828c.855-.855 2.175-.961 3.146-.318l-4.56 4.56 1.06 1.061L15.536 12l-4.51-4.51c.128-1.164-.254-2.375-1.147-3.268-1.562-1.562-4.095-1.562-5.657 0-1.562 1.562-1.562 4.095 0 5.657.893.893 2.104 1.276 3.269 1.147l2.033 2.033 1.06-1.06-2.033-2.033-.509-.51Zm-.285-3.113c-.39-.39-1.023-.39-1.414 0-.39.39-.39 1.024 0 1.415.39.39 1.024.39 1.414 0 .39-.391.39-1.024 0-1.415Zm-.43 8.122.715.079.51-.51.973-.973L8.465 12l-.975.974c-1.165-.128-2.375.254-3.268 1.147-1.562 1.562-1.562 4.095 0 5.657 1.562 1.562 4.094 1.562 5.657 0 .893-.893 1.275-2.104 1.147-3.269l.974-.973-1.06-1.061-.975.974-.509.509.079.716c.08.732-.16 1.486-.717 2.044-.976.976-2.56.976-3.536 0-.976-.977-.976-2.56 0-3.536.558-.558 1.312-.798 2.044-.717Zm-.984 3.192c.39.39 1.024.39 1.414 0 .39-.39.39-1.024 0-1.414-.39-.39-1.023-.39-1.414 0-.39.39-.39 1.023 0 1.414Z"
+                                fill-rule="evenodd" clip-rule="evenodd" fill="white" />
+                        </svg>
+                        <h1>Your clips</h1>
+
+                        <div class="border"></div>
+                </div>
+                </a>
+
+
+
+
+
+                <hr>
+
+            </section>
+        </div>
+
+
+
+
+
+
+        <!-- left side -->
+    </section>
+
+    <!-- End side --> <!-- End side --> <!-- End side --> <!-- End side -->
+
+    <section class="home-left">
+        <div class="home-main">
+            <div class="acc2">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="black">
+                        <path
+                            d="M22.146 11.146a.5.5 0 01-.353.854H20v7.5a1.5 1.5 0 01-1.5 1.5H14v-8h-4v8H5.5A1.5 1.5 0 014 19.5V12H2.207a.5.5 0 01-.353-.854L12 1l10.146 10.146Z"
+                            fill-rule="evenodd" clip-rule="evenodd" fill="white" />
+                    </svg>
+                    <h1>Home </h1>
+                    <div class="border">
+
+                    </div>
+                </a>
+            </div>
+            <div class="acc2">
+                <a href="#" class="c2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="black">
+                        <path
+                            d="m7.61 15.719.392-.22v-2.24l-.534-.228-.942-.404c-.869-.372-1.4-1.15-1.446-1.974-.047-.823.39-1.642 1.203-2.097h.001L15.13 3.59c1.231-.689 2.785-.27 3.466.833.652 1.058.313 2.452-.879 3.118l-1.327.743-.388.217v2.243l.53.227.942.404c.869.372 1.4 1.15 1.446 1.974.047.823-.39 1.642-1.203 2.097l-.002.001-8.845 4.964-.001.001c-1.231.688-2.784.269-3.465-.834-.652-1.058-.313-2.451.879-3.118l1.327-.742Zm1.993 6.002c-1.905 1.066-4.356.46-5.475-1.355-1.057-1.713-.548-3.89 1.117-5.025a4.14 4.14 0 01.305-.189l1.327-.742-.942-.404a4.055 4.055 0 01-.709-.391c-.963-.666-1.578-1.718-1.644-2.877-.08-1.422.679-2.77 1.968-3.49l8.847-4.966c1.905-1.066 4.356-.46 5.475 1.355 1.057 1.713.548 3.89-1.117 5.025a4.074 4.074 0 01-.305.19l-1.327.742.942.403c.253.109.49.24.709.392.963.666 1.578 1.717 1.644 2.876.08 1.423-.679 2.77-1.968 3.491l-8.847 4.965ZM10 14.567a.25.25 0 00.374.217l4.45-2.567a.25.25 0 000-.433l-4.45-2.567a.25.25 0 00-.374.216v5.134Z"
+                            fill-rule="evenodd" clip-rule="evenodd" fill="white" />
+                    </svg>
+                    <h1>Shorts</h1>
+                    <div class="border">
+
+                    </div>
+                </a>
+            </div>
+            <div class="acc2">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="black">
+                        <path
+                            d="M4 4.5A1.5 1.5 0 015.5 3h13A1.5 1.5 0 0120 4.5H4Zm16.5 3h-17v11h17v-11ZM3.5 6A1.5 1.5 0 002 7.5v11A1.5 1.5 0 003.5 20h17a1.5 1.5 0 001.5-1.5v-11A1.5 1.5 0 0020.5 6h-17Zm7.257 4.454a.5.5 0 00-.757.43v4.233a.5.5 0 00.757.429L15 13l-4.243-2.546Z"
+                            fill-rule="evenodd" clip-rule="evenodd" fill="white" />
+                    </svg>
+                    <h1>Subscriptions</h1>
+                    <div class="border">
+
+                    </div>
+                </a>
+            </div>
+            <div class="acc2">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="black">
+                        <path
+                            d="M12 20.5c4.694 0 8.5-3.806 8.5-8.5S16.694 3.5 12 3.5 3.5 7.306 3.5 12s3.806 8.5 8.5 8.5Zm0 1.5c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm0-5c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5Zm0 1c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6Zm-1.243-8.546c-.333-.2-.757.04-.757.43v4.233c0 .389.424.629.757.429L15 12l-4.243-2.546Z"
+                            fill-rule="evenodd" clip-rule="evenodd" fill="white" />
+                    </svg>
+                    <h1>YouTube Music</h1>
+                    <div class="border">
+
+                    </div>
+                </a>
+            </div>
+            <div class="acc2">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="black">
+                        <path
+                            d="M12 20.5c1.894 0 3.643-.62 5.055-1.666a5.5 5.5 0 00-10.064-.105.755.755 0 01-.054.099A8.462 8.462 0 0012 20.5Zm4.079-5.189a7 7 0 012.142 2.48 8.5 8.5 0 10-12.443 0 7 7 0 0110.3-2.48ZM12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm2-12.5a2 2 0 11-4 0 2 2 0 014 0Zm1.5 0a3.5 3.5 0 11-7 0 3.5 3.5 0 017 0Z"
+                            fill-rule="evenodd" clip-rule="evenodd" fill="white" />
+                    </svg>
+                    <h1>You</h1>
+                    <div class="border">
+
+                    </div>
+
+                </a>
+
+
+            </div>
+            <div class="acc2">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="black">
+                        <path
+                            d="M17.53 11.53c.293-.293.293-.767 0-1.06-.293-.293-.767-.293-1.06 0l-3.72 3.72V3c0-.414-.336-.75-.75-.75s-.75.336-.75.75v11.19l-3.72-3.72c-.293-.293-.767-.293-1.06 0-.293.293-.293.767 0 1.06l5 5 .53.53.53-.53 5-5Zm1.72 8.97c.414 0 .75-.336.75-.75s-.336-.75-.75-.75H4.75c-.414 0-.75.336-.75.75s.336.75.75.75h14.5Z"
+                            fill-rule="evenodd" clip-rule="evenodd" fill="white" />
+                    </svg>
+                    <h1>Downloads</h1>
+                    <div class="border">
+
+                    </div>
+
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+
+
+    <!-- this is inside the home  -->
+
+    <!-- 
+    <section class="small-sec">
+
+        <ul>
+            <a href="#">
+                <li>All</li>
+            </a>
+            <a href="#">
+                <li>Cartoon</li>
+            </a>
+            <a href="#">
+                <li>Movie</li>
+            </a>
+            <a href="#">
+                <li>Music</li>
+            </a>
+            <a href="#">
+                <li>Comedy</li>
+            </a>
+            <a href="#">
+                <li>Funny</li>
+            </a>
+            <a href="#">
+                <li>Action</li>
+            </a>
+            <a href="#">
+                <li>Horror</li>
+            </a>
+            <a href="#">
+                <li>Live</li>
+            </a>
+            <a href="#">
+                <li>Prank</li>
+            </a>
+            <a href="#">
+                <li>Boating</li>
+            </a>
+            <a href="#">
+                <li>Bike</li>
+            </a>
+        </ul>
+
+
+    </section> -->
+
+
+    <!-- small-sec End End small-sec End End small-sec End End small-sec End End -->
+    <main class="main-content">
+
+        <section class="content">
+
+            <div class="content-div">
+                <div class="video-content">
+                    <iframe width="100%" height="100%"
+                        src="https://www.youtube.com/embed/5iI1shRxmns?si=5XoZq6DAHFaFdMQr" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="inside-content">
+                    <h2>CSS From Scratch Tutorial: Day 2 -
+                        Understanding Flex Box and Pseudo...</h2>
+
+                    <p class="one-inside">
+                        Thorabh Codes
+                    </p>
+
+                    <p class="one-inside">
+                        1.5K views . Streamed 1 year ago
+
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="content-div">
+                <div class="video-content">
+                    <iframe width="100%" height="100%"
+                        src="https://www.youtube.com/embed/ag_yQEpXf94?si=QkdPONztraU9JLg4" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+
+                <div class="inside-content">
+                    <h2>World Por lll Start? & | Madan Gowri] MG Sguad 🖖</h2>
+
+                    <p class="one-inside">
+                        Madan Gowri
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 30 30">
+                            <path
+                                d="M15 3C8.373 3 3 8.373 3 15s5.373 12 12 12 12-5.373 12-12S21.627 3 15 3zm6.707 9.707l-7.56 7.56a1 1 0 01-1.414 0l-3.453-3.453a1 1 0 111.414-1.414l2.746 2.746 6.853-6.853a1 1 0 111.414 1.414z"
+                                fill="#aaaaaa" />
+                        </svg>
+
+                    </p>
+
+                    <p class="one-inside">
+
+
+                        1.3M views 3 hours ago
+
+                    </p>
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="content-div">
+                <div class="video-content">
+                    <iframe width="100%" height="100%"
+                        src="https://www.youtube.com/embed/RAOr_Yi81fg?si=pVbNTytZIG7t_alX" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="inside-content">
+                    <p class="tamil" style="font-size: 20px;">மாமா பசங்களின் அசத்தல் காமெடி சீன்!-பொண்ணு ரெடி.....
+                    </p>
+
+                    <p class="one-inside">
+                        Ayngaran Tamil Movie Comedy
+                    </p>
+
+                    <p class="one-inside">
+
+
+                        1.3M views &#8228; 6 months ago
+
+                    </p>
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class="content-div">
+                <div class="video-content">
+                    <iframe width="100%" height="100%"
+                        src="https://www.youtube.com/embed/_ecKPUqvhWk?si=lFiJCEA0vZqyqHER" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="inside-content">
+                    <h2>
+                        The Ultimate Hacking Scene - Kee |
+
+                    </h2>
+                    <h2>
+                        Jiiva | Anaika Soti | Sun NXT
+
+                    </h2>
+                    <p class="one-inside">
+                        Sun NXT <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 30 30">
+                            <path
+                                d="M15 3C8.373 3 3 8.373 3 15s5.373 12 12 12 12-5.373 12-12S21.627 3 15 3zm6.707 9.707l-7.56 7.56a1 1 0 01-1.414 0l-3.453-3.453a1 1 0 111.414-1.414l2.746 2.746 6.853-6.853a1 1 0 111.414 1.414z"
+                                fill="#aaaaaa" />
+                        </svg>
+                    </p>
+                    <p class="one-inside">
+                        1.3M views &#8228; 6 months ago
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-div">
+                <div class="video-content">
+                    <iframe width="100%" height="100%"
+                        src="https://www.youtube.com/embed/4AshEKgV54A?si=yY88h1IzFoCCV9bu" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="inside-content">
+                    <p class="tamil">என் வீடு எப்போ வேணாலும் இடிஞ்சி விழுந்துடும்...
+
+                    </p>
+                    <p class="one-inside">
+                        NewsGlitz Tamil
+                    </p>
+                    <p class="one-inside">
+                        1.8M views &#8228; 3 years ago
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-div">
+                <div class="video-content">
+                    <iframe width="100%" height="100%"
+                        src="https://www.youtube.com/embed/VUX1wamsSXI?si=LP5hKNvEZI5fUwcM" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="inside-content">
+                    <h2> Year 3025 🤯The World After 1000 Years! |Madan Gowri |Tamil |MG...
+                    </h2>
+                    <p class="one-inside">
+                        Madan Gowri <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 30 30">
+                            <path
+                                d="M15 3C8.373 3 3 8.373 3 15s5.373 12 12 12 12-5.373 12-12S21.627 3 15 3zm6.707 9.707l-7.56 7.56a1 1 0 01-1.414 0l-3.453-3.453a1 1 0 111.414-1.414l2.746 2.746 6.853-6.853a1 1 0 111.414 1.414z"
+                                fill="#aaaaaa" />
+                        </svg>
+                    </p>
+                    <p class="one-inside">
+                        1.3M views &#8228; 6 months ago
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-div">
+                <div class="video-content">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YVkK964yXzY?si=ONpeZf01EaoYAg4j"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="inside-content">
+                    <h2>Sathiyama Naan Solluren Di Album
+                        Song|Mugen Rao|</h2>
+
+                    <p class="one-inside">
+                        Durga Pragan <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 30 30">
+                            <path
+                                d="M15 3C8.373 3 3 8.373 3 15s5.373 12 12 12 12-5.373 12-12S21.627 3 15 3zm6.707 9.707l-7.56 7.56a1 1 0 01-1.414 0l-3.453-3.453a1 1 0 111.414-1.414l2.746 2.746 6.853-6.853a1 1 0 111.414 1.414z"
+                                fill="#aaaaaa" />
+                        </svg>
+                    </p>
+
+                    <p class="one-inside">
+                        1.5K views . Streamed 1 year ago
+
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="content-div">
+                <div class="video-content">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3BGOZ9xuyKs?si=3oOL88ZfzReKfgSQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="inside-content">
+                    <h2>Pogiren - Mugen Rao MGR feat. Prashan Sean | Official Music Video | 4K</h2>
+
+                    <p class="one-inside">
+                        Durga Pragan <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 30 30">
+                            <path
+                                d="M15 3C8.373 3 3 8.373 3 15s5.373 12 12 12 12-5.373 12-12S21.627 3 15 3zm6.707 9.707l-7.56 7.56a1 1 0 01-1.414 0l-3.453-3.453a1 1 0 111.414-1.414l2.746 2.746 6.853-6.853a1 1 0 111.414 1.414z"
+                                fill="#aaaaaa" />
+                        </svg>
+                    </p>
+
+                    <p class="one-inside">
+                        100M views . Streamed 1 year ago
+
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="content-div">
+                <div class="video-content">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LG0KA4ZQOZ0?si=QKf2Qy7rVaVxJpyQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="inside-content">
+                    <h2>Kayalvizhi - Mugen Rao MGR (Official Music Video) 4K</h2>
+
+                    <p class="one-inside">
+                        Durga Pragan <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 30 30">
+                            <path
+                                d="M15 3C8.373 3 3 8.373 3 15s5.373 12 12 12 12-5.373 12-12S21.627 3 15 3zm6.707 9.707l-7.56 7.56a1 1 0 01-1.414 0l-3.453-3.453a1 1 0 111.414-1.414l2.746 2.746 6.853-6.853a1 1 0 111.414 1.414z"
+                                fill="#aaaaaa" />
+                        </svg>
+                    </p>
+
+                    <p class="one-inside">
+                        11M views . Streamed 1 year ago
+
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="content-div">
+                <div class="video-content">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PbZFNc22-FQ?si=NbnA6dFWALoKeyGK"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="inside-content">
+                    <h2>Oru Naalil - Video Song | Star Version | Kavin | Elan | Yuvan Shankar Raja | Think Tapes</h2>
+
+                    <p class="one-inside">
+                        Think Music India
+                    </p>
+
+                    <p class="one-inside">
+                        1.5K views . Streamed 1 year ago
+
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="content-div">
+                <div class="video-content">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0G2VxhV_gXM?si=Oe9MZ0Fn8EftiAN9"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="inside-content">
+                    <h2>Premam Malare Video Song | Rajesh Murugesan | Vijay Yesudas | Nivin Pauly | Sai Pallavi</h2>
+
+                    <p class="one-inside">
+                        Thorabh Codes
+                    </p>
+
+                    <p class="one-inside">
+                        1.5K views . Streamed 1 year ago
+
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="content-div">
+                <div class="video-content">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/D5KBfWrMWR4?si=PnLRX4sR0eB9iTIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="inside-content">
+                    <h2>Squid Game: Season 3 | Final Games Tamil Trailer | Netflix India</h2>
+
+                    <p class="one-inside">
+                        Netflix India<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 30 30">
+                            <path
+                                d="M15 3C8.373 3 3 8.373 3 15s5.373 12 12 12 12-5.373 12-12S21.627 3 15 3zm6.707 9.707l-7.56 7.56a1 1 0 01-1.414 0l-3.453-3.453a1 1 0 111.414-1.414l2.746 2.746 6.853-6.853a1 1 0 111.414 1.414z"
+                                fill="#aaaaaa" />
+                        </svg> 
+                    </p>
+
+                    <p class="one-inside">
+                        1.5K views . Streamed 1 year ago
+
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="content-div">
+                <div class="video-content">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5Fgmgna7g4c?si=QCrgOlKD2Jy_rSFR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="inside-content">
+                    <h2>Spyder Movie Back to Back Scenes | Mahesh Babu | Rakul Preet Singh | S. J. Suryah | KTV</h2>
+
+                    <p class="one-inside">
+                        Thorabh Codes
+                    </p>
+
+                    <p class="one-inside">
+                        1.5K views . Streamed 1 year ago
+
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="content-div">
+                <div class="video-content">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/urF_R8aDkU0?si=_yRUfECKAX3nrLvt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="inside-content">
+                    <h2>
+                       King Shark | Adventure & Horror | Full Movie | Tamil Dubbed Thamarai</h2>
+
+                    <p class="one-inside">
+
+                        SonyMusicSouthVEVO<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 30 30">
+                            <path
+                                d="M15 3C8.373 3 3 8.373 3 15s5.373 12 12 12 12-5.373 12-12S21.627 3 15 3zm6.707 9.707l-7.56 7.56a1 1 0 01-1.414 0l-3.453-3.453a1 1 0 111.414-1.414l2.746 2.746 6.853-6.853a1 1 0 111.414 1.414z"
+                                fill="#aaaaaa" />
+                        </svg>
+
+                    </p>
+
+                    <p class="one-inside">
+                        1.5K views . Streamed 1 year ago
+
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="content-div">
+                <div class="video-content">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JwFENmU8GAs?si=lC2B3OILPTP2HOMZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="inside-content">
+                    <h2>ராஜநாகம் ( King Of Snake ) | Full Movie | Kang Ning | IOF Tamil</h2>
+
+                    <p class="one-inside">
+                        Thorabh Codes
+                    </p>
+
+                    <p class="one-inside">
+                        1.5K views . Streamed 1 year ago
+
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+        </section>
+
+    </main>
+
+    <!-- for-mobile for-mobile for-mobile for-mobile for-mobile for-mobile for-mobile -->
+
+    <main class="for-mobile">
+
+        <section class="mo-sec">
+
+
+            <ul class="mo-main-text">
+                <a href="#">
+                    <li>All</li>
+                </a>
+                <a href="#">
+                    <li>Cartoon</li>
+                </a>
+                <a href="#">
+                    <li>Movie</li>
+                </a>
+                <a href="#">
+                    <li>Music</li>
+                </a>
+                <a href="#">
+                    <li>Comedy</li>
+                </a>
+                <a href="#">
+                    <li>Funny</li>
+                </a>
+
+                <a href="#">
+                    <li>Prank</li>
+                </a>
+
+
+
+            </ul>
+
+
+
+            <!-- top nav end  top nav end  top nav end  top nav end  top nav end  top nav end -->
+
+
+
+
+
+            <!-- <div class="main-nav">  -->
+
+            <div class="mo-child-nav">
+
+
+
+                <div class="mo-main-permium">
+
+
+
+
+
+
+                    <!-- youtube -->
+                    <div class="youtube">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="auto" viewBox="0 0 101 20">
+                            <g>
+                                <path
+                                    d="M14.4848 20C14.4848 20 23.5695 20 25.8229 19.4C27.0917 19.06 28.0459 18.08 28.3808 16.87C29 14.65 29 9.98 29 9.98C29 9.98 29 5.34 28.3808 3.14C28.0459 1.9 27.0917 0.94 25.8229 0.61C23.5695 0 14.4848 0 14.4848 0C14.4848 0 5.42037 0 3.17711 0.61C1.9286 0.94 0.954148 1.9 0.59888 3.14C0 5.34 0 9.98 0 9.98C0 9.98 0 14.65 0.59888 16.87C0.954148 18.08 1.9286 19.06 3.17711 19.4C5.42037 20 14.4848 20 14.4848 20Z"
+                                    fill="#FF0033" />
+                                <path d="M19 10L11.5 5.75V14.25L19 10Z" fill="white" />
+                            </g>
+                            <g>
+                                <path
+                                    d="M32.1819 2.10016V18.9002H34.7619V12.9102H35.4519C38.8019 12.9102 40.5619 11.1102 40.5619 7.57016V6.88016C40.5619 3.31016 39.0019 2.10016 35.7219 2.10016H32.1819ZM37.8619 7.63016C37.8619 10.0002 37.1419 11.0802 35.4019 11.0802H34.7619V3.95016H35.4519C37.4219 3.95016 37.8619 4.76016 37.8619 7.13016V7.63016Z"
+                                    fill="white" />
+                                <path
+                                    d="M41.982 18.9002H44.532V10.0902C44.952 9.37016 45.992 9.05016 47.302 9.32016L47.462 6.33016C47.292 6.31016 47.142 6.29016 47.002 6.29016C45.802 6.29016 44.832 7.20016 44.342 8.86016H44.162L43.952 6.54016H41.982V18.9002Z"
+                                    fill="white" />
+                                <path
+                                    d="M55.7461 11.5002C55.7461 8.52016 55.4461 6.31016 52.0161 6.31016C48.7861 6.31016 48.0661 8.46016 48.0661 11.6202V13.7902C48.0661 16.8702 48.7261 19.1102 51.9361 19.1102C54.4761 19.1102 55.7861 17.8402 55.6361 15.3802L53.3861 15.2602C53.3561 16.7802 53.0061 17.4002 51.9961 17.4002C50.7261 17.4002 50.6661 16.1902 50.6661 14.3902V13.5502H55.7461V11.5002ZM51.9561 7.97016C53.1761 7.97016 53.2661 9.12016 53.2661 11.0702V12.0802H50.6661V11.0702C50.6661 9.14016 50.7461 7.97016 51.9561 7.97016Z"
+                                    fill="white" />
+                                <path
+                                    d="M60.1945 18.9002V8.92016C60.5745 8.39016 61.1945 8.07016 61.7945 8.07016C62.5645 8.07016 62.8445 8.61016 62.8445 9.69016V18.9002H65.5045L65.4845 8.93016C65.8545 8.37016 66.4845 8.04016 67.1045 8.04016C67.7745 8.04016 68.1445 8.61016 68.1445 9.69016V18.9002H70.8045V9.49016C70.8045 7.28016 70.0145 6.27016 68.3445 6.27016C67.1845 6.27016 66.1945 6.69016 65.2845 7.67016C64.9045 6.76016 64.1545 6.27016 63.0845 6.27016C61.8745 6.27016 60.7345 6.79016 59.9345 7.76016H59.7845L59.5945 6.54016H57.5445V18.9002H60.1945Z"
+                                    fill="white" />
+                                <path
+                                    d="M74.0858 4.97016C74.9858 4.97016 75.4058 4.67016 75.4058 3.43016C75.4058 2.27016 74.9558 1.91016 74.0858 1.91016C73.2058 1.91016 72.7758 2.23016 72.7758 3.43016C72.7758 4.67016 73.1858 4.97016 74.0858 4.97016ZM72.8658 18.9002H75.3958V6.54016H72.8658V18.9002Z"
+                                    fill="white" />
+                                <path
+                                    d="M79.9516 19.0902C81.4116 19.0902 82.3216 18.4802 83.0716 17.3802H83.1816L83.2916 18.9002H85.2816V6.54016H82.6416V16.4702C82.3616 16.9602 81.7116 17.3202 81.1016 17.3202C80.3316 17.3202 80.0916 16.7102 80.0916 15.6902V6.54016H77.4616V15.8102C77.4616 17.8202 78.0416 19.0902 79.9516 19.0902Z"
+                                    fill="white" />
+                                <path
+                                    d="M90.0031 18.9002V8.92016C90.3831 8.39016 91.0031 8.07016 91.6031 8.07016C92.3731 8.07016 92.6531 8.61016 92.6531 9.69016V18.9002H95.3131L95.2931 8.93016C95.6631 8.37016 96.2931 8.04016 96.9131 8.04016C97.5831 8.04016 97.9531 8.61016 97.9531 9.69016V18.9002H100.613V9.49016C100.613 7.28016 99.8231 6.27016 98.1531 6.27016C96.9931 6.27016 96.0031 6.69016 95.0931 7.67016C94.7131 6.76016 93.9631 6.27016 92.8931 6.27016C91.6831 6.27016 90.5431 6.79016 89.7431 7.76016H89.5931L89.4031 6.54016H87.3531V18.9002H90.0031Z"
+                                    fill="white" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <!-- cast -->
+
+                    <div class="cast">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-cast">
+                            <path
+                                d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6">
+                            </path>
+                            <line x1="2" y1="20" x2="2.01" y2="20"></line>
+                        </svg>
+
+                    </div>
+
+                    <!-- search-logo -->
+
+
+
+
+
+                    <!-- Notification -->
+                    <div class="bell">
+
+                        <a href="#">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="26" width="26"
+                                viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13.497 4.898l.053.8.694.4C15.596 6.878 16.5 8.334 16.5 10v2.892c0 .997.27 1.975.784 2.83L18.35 17.5H5.649l1.067-1.778c.513-.855.784-1.833.784-2.83V10c0-1.666.904-3.122 2.256-3.902l.694-.4.053-.8c.052-.78.703-1.398 1.497-1.398.794 0 1.445.618 1.497 1.398ZM6 10c0-2.224 1.21-4.165 3.007-5.201C9.11 3.236 10.41 2 12 2c1.59 0 2.89 1.236 2.993 2.799C16.79 5.835 18 7.776 18 10v2.892c0 .725.197 1.436.57 2.058l1.521 2.535c.4.667-.08 1.515-.857 1.515H15c0 .796-.316 1.559-.879 2.121-.562.563-1.325.879-2.121.879s-1.559-.316-2.121-.879C9.316 20.56 9 19.796 9 19H4.766c-.777 0-1.257-.848-.857-1.515L5.43 14.95c.373-.622.57-1.333.57-2.058V10Zm4.5 9c0 .398.158.78.44 1.06.28.282.662.44 1.06.44s.78-.158 1.06-.44c.282-.28.44-.662.44-1.06h-3Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+
+                    </div>
+
+                    <div class="mo-search-logo">
+                        <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <!-- </div> -->
+        </section>
+
+
+
+
+
+        <div class="mo-videos">
+            <div class="video-mo">
+                <div class="video-content">
+                    <iframe width="100%" height="100%"
+                        src="https://www.youtube.com/embed/5iI1shRxmns?si=5XoZq6DAHFaFdMQr" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="inside-content">
+                    <h2>CSS From Scratch Tutorial: Day 2 -
+                        Understanding Flex Box and Pseudo...</h2>
+
+                    <p class="one-inside">
+                        Thorabh Codes
+                    </p>
+
+                    <p class="one-inside">
+                        1.5K views . Streamed 1 year ago
+
+
+                    </p>
+                </div>
+            </div>
+            <div class="video-mo">
+                <div class="video-content">
+                    <iframe width="100%" height="100%"
+                        src="https://www.youtube.com/embed/4AshEKgV54A?si=yY88h1IzFoCCV9bu" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="inside-content">
+                    <p class="tamil">என் வீடு எப்போ வேணாலும் இடிஞ்சி விழுந்துடும்...
+
+                    </p>
+                    <p class="one-inside">
+                        NewsGlitz Tamil
+                    </p>
+                    <p class="one-inside">
+                        1.8M views &#8228; 3 years ago
+                    </p>
+                </div>
+
+
+
+
+            </div>
+            <div class="video-mo">
+                <div class="video-content">
+                    <iframe width="100%" height="100%"
+                        src="https://www.youtube.com/embed/VUX1wamsSXI?si=LP5hKNvEZI5fUwcM" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="inside-content">
+                    <h2> Year 3025 🤯The World After 1000 Years! |Madan Gowri |Tamil |MG...
+
+
+
+                    </h2>
+                    <p class="one-inside">
+                        Madan Gowri <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 30 30">
+                            <path
+                                d="M15 3C8.373 3 3 8.373 3 15s5.373 12 12 12 12-5.373 12-12S21.627 3 15 3zm6.707 9.707l-7.56 7.56a1 1 0 01-1.414 0l-3.453-3.453a1 1 0 111.414-1.414l2.746 2.746 6.853-6.853a1 1 0 111.414 1.414z"
+                                fill="#aaaaaa" />
+                        </svg>
+                    </p>
+                    <p class="one-inside">
+                        1.3M views &#8228; 6 months ago
+                    </p>
+                </div>
+            </div>
+
+
+
+
+            <div class="content-div">
+                <div class="video-content">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YVkK964yXzY?si=ONpeZf01EaoYAg4j"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="inside-content">
+                    <h2>Sathiyama Naan Solluren Di Album
+                        Song|Mugen Rao|</h2>
+
+                    <p class="one-inside">
+                        Durga Pragan <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 30 30">
+                            <path
+                                d="M15 3C8.373 3 3 8.373 3 15s5.373 12 12 12 12-5.373 12-12S21.627 3 15 3zm6.707 9.707l-7.56 7.56a1 1 0 01-1.414 0l-3.453-3.453a1 1 0 111.414-1.414l2.746 2.746 6.853-6.853a1 1 0 111.414 1.414z"
+                                fill="#aaaaaa" />
+                        </svg>
+                    </p>
+
+                    <p class="one-inside">
+                        1.5K views . Streamed 1 year ago
+
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="content-div">
+                <div class="video-content">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3BGOZ9xuyKs?si=3oOL88ZfzReKfgSQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="inside-content">
+                    <h2>Pogiren - Mugen Rao MGR feat. Prashan Sean | Official Music Video | 4K</h2>
+
+                    <p class="one-inside">
+                        Durga Pragan <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 30 30">
+                            <path
+                                d="M15 3C8.373 3 3 8.373 3 15s5.373 12 12 12 12-5.373 12-12S21.627 3 15 3zm6.707 9.707l-7.56 7.56a1 1 0 01-1.414 0l-3.453-3.453a1 1 0 111.414-1.414l2.746 2.746 6.853-6.853a1 1 0 111.414 1.414z"
+                                fill="#aaaaaa" />
+                        </svg>
+                    </p>
+
+                    <p class="one-inside">
+                        100M views . Streamed 1 year ago
+
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+                 <div class="content-div">
+                <div class="video-content">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LG0KA4ZQOZ0?si=QKf2Qy7rVaVxJpyQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="inside-content">
+                    <h2>Kayalvizhi - Mugen Rao MGR (Official Music Video) 4K</h2>
+
+                    <p class="one-inside">
+                        Durga Pragan <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 30 30">
+                            <path
+                                d="M15 3C8.373 3 3 8.373 3 15s5.373 12 12 12 12-5.373 12-12S21.627 3 15 3zm6.707 9.707l-7.56 7.56a1 1 0 01-1.414 0l-3.453-3.453a1 1 0 111.414-1.414l2.746 2.746 6.853-6.853a1 1 0 111.414 1.414z"
+                                fill="#aaaaaa" />
+                        </svg>
+                    </p>
+
+                    <p class="one-inside">
+                        11M views . Streamed 1 year ago
+
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+             <div class="content-div">
+                <div class="video-content">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PbZFNc22-FQ?si=NbnA6dFWALoKeyGK"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="inside-content">
+                    <h2>Oru Naalil - Video Song | Star Version | Kavin | Elan | Yuvan Shankar Raja | Think Tapes</h2>
+
+                    <p class="one-inside">
+                        Think Music India
+                    </p>
+
+                    <p class="one-inside">
+                        1.5K views . Streamed 1 year ago
+
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="content-div">
+                <div class="video-content">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0G2VxhV_gXM?si=Oe9MZ0Fn8EftiAN9"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="inside-content">
+                    <h2>Premam Malare Video Song | Rajesh Murugesan | Vijay Yesudas | Nivin Pauly | Sai Pallavi</h2>
+
+                    <p class="one-inside">
+                        Thorabh Codes
+                    </p>
+
+                    <p class="one-inside">
+                        1.5K views . Streamed 1 year ago
+
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+            
+             <div class="content-div">
+                <div class="video-content">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/D5KBfWrMWR4?si=PnLRX4sR0eB9iTIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="inside-content">
+                    <h2>Squid Game: Season 3 | Final Games Tamil Trailer | Netflix India</h2>
+
+                    <p class="one-inside">
+                        Netflix India<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 30 30">
+                            <path
+                                d="M15 3C8.373 3 3 8.373 3 15s5.373 12 12 12 12-5.373 12-12S21.627 3 15 3zm6.707 9.707l-7.56 7.56a1 1 0 01-1.414 0l-3.453-3.453a1 1 0 111.414-1.414l2.746 2.746 6.853-6.853a1 1 0 111.414 1.414z"
+                                fill="#aaaaaa" />
+                        </svg> 
+                    </p>
+
+                    <p class="one-inside">
+                        1.5K views . Streamed 1 year ago
+
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="content-div">
+                <div class="video-content">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5Fgmgna7g4c?si=QCrgOlKD2Jy_rSFR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="inside-content">
+                    <h2>Spyder Movie Back to Back Scenes | Mahesh Babu | Rakul Preet Singh | S. J. Suryah | KTV</h2>
+
+                    <p class="one-inside">
+                        Thorabh Codes
+                    </p>
+
+                    <p class="one-inside">
+                        1.5K views . Streamed 1 year ago
+
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+
+             <div class="content-div">
+                <div class="video-content">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/urF_R8aDkU0?si=_yRUfECKAX3nrLvt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="inside-content">
+                    <h2>
+                       King Shark | Adventure & Horror | Full Movie | Tamil Dubbed Thamarai</h2>
+
+                    <p class="one-inside">
+
+                        SonyMusicSouthVEVO<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 30 30">
+                            <path
+                                d="M15 3C8.373 3 3 8.373 3 15s5.373 12 12 12 12-5.373 12-12S21.627 3 15 3zm6.707 9.707l-7.56 7.56a1 1 0 01-1.414 0l-3.453-3.453a1 1 0 111.414-1.414l2.746 2.746 6.853-6.853a1 1 0 111.414 1.414z"
+                                fill="#aaaaaa" />
+                        </svg>
+
+                    </p>
+
+                    <p class="one-inside">
+                        1.5K views . Streamed 1 year ago
+
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+             <div class="content-div">
+                <div class="video-content">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JwFENmU8GAs?si=lC2B3OILPTP2HOMZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="inside-content">
+                    <p class="tamil">ராஜநாகம் ( King Of Snake ) | Full Movie | Kang Ning | IOF Tamil</p>
+
+                    <p class="one-inside">
+                        Thorabh Codes
+                    </p>
+
+                    <p class="one-inside">
+                        1.5K views . Streamed 1 year ago
+
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- lastt -->
+        </div>
+
+
+
+       
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+</body>
+
+</html>
